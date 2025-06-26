@@ -1,3 +1,22 @@
+// Criado as funções que direciona para as áreas de contato
+function abrirGitHub() {
+    window.open("https://github.com/NeusaNeves", "_blank", "noopener noreferrer");
+};
+
+function abrirLinkedin(){
+    window.open("https://www.linkedin.com/in/neusa-neves-81947b253/", "_blank", "noopener noreferrer");
+};
+
+function abrirWhatsApp() {
+    window.open("https://wa.me/5511985837200", "_blank", "noopener noreferrer");
+};
+
+function sendEmail() {
+    window.location.href = "mailto:neusanneves13@gmail.com?subject=Contato%20do%20site&body=Olá%20Neusa,%20gostaria%20de%20falar%20com%20você.";
+};
+
+
+
 // projetos notas e img
 const project = {
     projeto1: {
