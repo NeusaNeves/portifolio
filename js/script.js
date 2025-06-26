@@ -44,3 +44,25 @@ function showProject(id) {
     `;
 
 }
+
+// secção com um texto fixo
+const text = [
+        {texto:"Code doesn`t have to be perfect to be wonderful", autor:"Developer Wisdom"},
+];
+
+const container = document.getElementById("texto-fixo")
+
+text.forEach((item) => {
+        const textoCard = document.createElement('article');
+
+        textoCard.className = 'cursor-pointer';
+
+        textoCard.innerHTML =`
+            <div class="flex gap-3 mt-3">
+                <div>
+                    <p><q>${item.texto}</q></p>
+                    <small class="text-gray-600">- ${item.autor}</small>
+                </div>
+            </div> `;
+            container.appendChild(textoCard);
+    });
