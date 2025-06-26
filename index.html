@@ -5,12 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>Portifólio Neusa</title>
+    
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+          
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&family=VT323&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.min.css
     " rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- CSS-TAILWIND -->
     <style type="text/tailwindcss">
       @theme {
         --font-display:"VT323", monospace;
@@ -20,8 +25,79 @@
         --color-grey2:#EEEFE0;
       }
     </style>
+
+<!-- CORPO DA PÁGINA -->
 </head>
 <body>
-    <h1 class="bg-grey font-display">Hello</h1>
+    <header>
+        <h2>Neusa</h2>
+    </header>
+    <main>
+        <!-- área com a linguagens -->
+        <section class="bg-verde-pastel2 h-14">
+            <abbr title="JavaScript">
+                <span class="bg-grey2">
+                    <i class="devicon-javascript-plain colored"></i>
+                </span>
+            </abbr>
+            <abbr title="HTML">
+                <span class="bg-grey2">
+                    <i class="devicon-html5-plain colored"></i>
+                </span>
+            </abbr>
+            <abbr title="CSS">
+                <span class="bg-grey2">
+                    <i class="devicon-css3-plain colored"></i>
+                </span>
+            </abbr>
+            <abbr title="Tailwind">
+                <span class="bg-grey2">
+                    <i class="devicon-tailwindcss-original colored"></i>
+                </span>
+            </abbr>
+            <abbr title="Boostrap">
+                <span class="bg-grey2">
+                    <i class="devicon-bootstrap-plain colored"></i>
+                </span>
+            </abbr>
+            <abbr title="Gimp">
+                <span class="bg-grey2">
+                    <i class="devicon-gimp-plain colored"></i>
+                </span>
+            </abbr>
+            <abbr title="GIT">
+                <span class="bg-grey2">
+                    <i class="devicon-git-plain colored"></i>
+                </span>
+            </abbr>
+        </section>
+
+        <!-- Meios de contato -->
+        <section>
+            <span class="bg-grey"><a href="#">
+                <i class="devicon-github-original colored"></i></a>
+            </span>
+            <span class="bg-grey"><a href="#">
+                <i class="devicon-linkedin-plain colored"></i></a>
+            </span>
+            <span class="bg-grey"><a href="#">W</a></span>
+            <span class="bg-grey"><a href="#">E</a></span>
+        </section>
+        <section class="bg-amber-200 h-52 mb-2" id="foto-project">Imagem</section>
+
+        <section class="bg-amber-200 h-52" id="nota-project">Notas</section>
+    </main>
+
+    <!-- rodapé com navbar -->
+    <footer class="bg-amber-600 h-10" id="icon-project">
+        <nav>
+            <button onclick="showProject('projeto1')" class="bg-red-500">
+            1</button>
+            <button onclick="showProject ('projeto2')" class="bg-red-500">
+            2</button>
+        </nav>
+    </footer>
+    <p>&copy;Criado por Neusa Neves - Ano 2025</p>
 </body>
+<script src="js/script.js"></script>
 </html>
