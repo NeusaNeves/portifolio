@@ -1,2 +1,6 @@
 @import "tailwindcss";
 
+abbr[title] {
+    text-decoration: none;
+    border-bottom: none;
+}
