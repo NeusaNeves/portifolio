@@ -29,78 +29,79 @@
 
 <!-- CORPO DA PÁGINA -->
 </head>
-<body class="bg-grey">
+<body class="bg-verde-pastel">
     <header>
         <h2>Neusa</h2>
     </header>
-    <main class="grid grid-cols-12 gap-4 pb-35">
+    <main class="p-4 flex flex-col gap-4">
         <!-- área com a linguagens -->
-        <section class="bg-verde-pastel2 col-span-4 h-20 flex items-center justify-around rounded-2xl shadow-xl">
+        <section class="bg-verde-pastel2 h-20 w-70 flex items-center justify-around">
              <!-- <h3 class="font-display text-lg font-medium ">Linguagens</h3> -->
             <abbr title="JavaScript">
-                <span class="bg-grey2 flex justify-around">
-                    <i class="devicon-javascript-plain colored"></i>
+                <span class="">
+                    <i class="devicon-javascript-plain colored text-2xl"></i>
                 </span>
             </abbr>
             <abbr title="HTML">
                 <span class="">
-                    <i class="devicon-html5-plain colored"></i>
+                    <i class="devicon-html5-plain colored text-2xl"></i>
                 </span>
             </abbr>
             <abbr title="CSS">
                 <span class="">
-                    <i class="devicon-css3-plain colored"></i>
+                    <i class="devicon-css3-plain colored text-2xl"></i>
                 </span>
             </abbr>
             <abbr title="Tailwind">
                 <span class="">
-                    <i class="devicon-tailwindcss-original colored"></i>
+                    <i class="devicon-tailwindcss-original colored text-2xl"></i>
                 </span>
             </abbr>
             <abbr title="Boostrap">
                 <span class="">
-                    <i class="devicon-bootstrap-plain colored"></i>
+                    <i class="devicon-bootstrap-plain colored text-2xl"></i>
                 </span>
             </abbr>
             <abbr title="Gimp">
                 <span class="">
-                    <i class="devicon-gimp-plain colored"></i>
+                    <i class="devicon-gimp-plain colored text-2xl"></i>
                 </span>
             </abbr>
             <abbr title="GIT">
                 <span class="">
-                    <i class="devicon-git-plain colored"></i>
+                    <i class="devicon-git-plain colored text-2xl"></i>
                 </span>
             </abbr>
         </section>
 
         <!-- Meios de contato -->
-        <section class="bg-amber-400 col-span-4 h-10 flex items-center justify-around rounded-2xl shadow-xl">
-            <button class="" onclick="abrirGitHub()">
-                <i class="devicon-github-original colored"></i>
+        <section class="bg-amber-400 h-20 w-70 flex items-center justify-around">
+            <button class="bg-red-400 w-11 h-10" onclick="abrirGitHub()">
+                <i class="devicon-github-original colored text-2xl"></i>
             </button>
-            <button class="" onclick="abrirLinkedin()">
-                <i class="devicon-linkedin-plain colored"></i>
+            <button class="bg-red-400 w-11 h-10" onclick="abrirLinkedin()">
+                <i class="devicon-linkedin-plain colored text-2xl"></i>
             </button>
-            <button class="" onclick="abrirWhatsApp()">
-                <i class="ri-whatsapp-fill text-green-700"></i></a>
+            <button class="bg-red-400 w-11 h-10" onclick="abrirWhatsApp()">
+                <i class="ri-whatsapp-fill text-green-700 text-2xl"></i></a>
             </button>
-            <button class="" onclick="sendEmail()">
-                <i class="ri-mail-fill text-emerald-100"></i></a>
+            <button class="bg-red-400 w-11 h-10" onclick="sendEmail()">
+                <i class="ri-mail-fill text-emerald-100 text-2xl"></i></a>
             </button>
         </section>
-        <section class="bg-blue-500 h-10 col-span-3 row-span-1 flex items-center justufy-center rounded-2xl shadow-xl">
-            <a href="Curriculum - novo.docx" download="Curriculum - novo.docx">Baixar PDF<i class="ri-file-download-fill"></i></a>
+        <section class="bg-blue-500 h-10 w-40 flex items-center justify-center">
+            <a href="Curriculum - novo.docx" download="Curriculum - novo.docx" class="font-display font-medium text-lg">Baixar PDF<i class="ri-file-download-fill pl-2"></i></a>
         </section>
 
         <!-- área com as imagens e notas -->
-        <section class="bg-amber-200 col-span-4 row-start-1 row-span-1 col-start-5 h-52 flex items-center justify-center rounded-2xl shadow-xl/20" id="foto-project">Imagem</section>
+        <div class="">
+            <section class="bg-amber-200" id="foto-project">Imagem</section>
+            <section class="bg-amber-200" id="nota-project">Notas
+                <hr>
+            </section>
+        </div>
 
-        <section class="bg-amber-200 col-span-4 row-start-1 row-span-1 col-start-9 h-62 flex items-center justify-center rounded-2xl shadow-xl/20" id="nota-project">Notas
-            <hr>
-        </section>
-
-        <section class="bg-red-700 col-span-8 row-start-2 col-start-5 h-32 flex items center justify-center rounded-2xl w-2xs ml-28 shadow-xl/20" id="texto-fixo"></section>
+        <section class="bg-red-700" id="texto-fixo"></section>
     </main>
 
     <!-- rodapé com navbar -->
