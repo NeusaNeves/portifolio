@@ -20,100 +20,108 @@
       @theme {
         --font-display:"VT323", monospace;
         --font-display2:font-family: "Quantico", sans-serif;
-        --color-verde-pastel:#A7C1A8;
-        --color-verde-pastel2:#819A91;
+        --color-verde-pastel:#819A91;
         --color-grey:#D1D8BE;
         --color-grey2:#EEEFE0;
+        --color-greenn:#444B3B;
       }
     </style>
 
 <!-- CORPO DA PÁGINA -->
 </head>
-<body class="bg-verde-pastel">
-    <header>
-        <h2>Neusa</h2>
-    </header>
-    <main class="p-4 flex flex-col gap-4">
+<body class="min-h-screen bg-greenn flex items-center justify-center p-6 bg-[url('/assets/fundo5.jpg')] bg-cover bg-center h-screen">
+   
+    <main class="grid grid-cols-4 gap-4 max-w-6xl w-full">
         <!-- área com a linguagens -->
-        <section class="bg-verde-pastel2 h-20 w-70 flex items-center justify-around">
+        <section class="flex flex-col gap-4">
              <!-- <h3 class="font-display text-lg font-medium ">Linguagens</h3> -->
-            <abbr title="JavaScript">
-                <span class="">
-                    <i class="devicon-javascript-plain colored text-2xl"></i>
-                </span>
-            </abbr>
-            <abbr title="HTML">
-                <span class="">
-                    <i class="devicon-html5-plain colored text-2xl"></i>
-                </span>
-            </abbr>
-            <abbr title="CSS">
-                <span class="">
-                    <i class="devicon-css3-plain colored text-2xl"></i>
-                </span>
-            </abbr>
-            <abbr title="Tailwind">
-                <span class="">
-                    <i class="devicon-tailwindcss-original colored text-2xl"></i>
-                </span>
-            </abbr>
-            <abbr title="Boostrap">
-                <span class="">
-                    <i class="devicon-bootstrap-plain colored text-2xl"></i>
-                </span>
-            </abbr>
-            <abbr title="Gimp">
-                <span class="">
-                    <i class="devicon-gimp-plain colored text-2xl"></i>
-                </span>
-            </abbr>
-            <abbr title="GIT">
-                <span class="">
-                    <i class="devicon-git-plain colored text-2xl"></i>
-                </span>
-            </abbr>
+            <section class="bg-verde-pastel h-20 flex items-center justify-around rounded shadow-md">
+                <abbr title="JavaScript">
+                    <span class="">
+                        <i class="devicon-javascript-plain colored text-2xl"></i>
+                    </span>
+                </abbr>
+                <abbr title="HTML">
+                    <span class="">
+                        <i class="devicon-html5-plain colored text-2xl"></i>
+                    </span>
+                </abbr>
+                <abbr title="CSS">
+                    <span class="">
+                        <i class="devicon-css3-plain colored text-2xl"></i>
+                    </span>
+                </abbr>
+                <abbr title="Tailwind">
+                    <span class="">
+                        <i class="devicon-tailwindcss-original colored text-2xl"></i>
+                    </span>
+                </abbr>
+                <abbr title="Boostrap">
+                    <span class="">
+                        <i class="devicon-bootstrap-plain colored text-2xl"></i>
+                    </span>
+                </abbr>
+                <abbr title="Gimp">
+                    <span class="">
+                        <i class="devicon-gimp-plain colored text-2xl"></i>
+                    </span>
+                </abbr>
+                <abbr title="GIT">
+                    <span class="">
+                        <i class="devicon-git-plain colored text-2xl"></i>
+                    </span>
+                </abbr>
+            </section>
+
+            <!-- Meios de contato -->
+            <section class="h-12 flex items-center justify-around">
+                <button class="bg-grey w-11 h-10" onclick="abrirGitHub()">
+                    <i class="devicon-github-original colored text-2xl"></i>
+                </button>
+                <button class="bg-grey w-11 h-10" onclick="abrirLinkedin()">
+                    <i class="devicon-linkedin-plain colored text-2xl"></i>
+                </button>
+                <button class="bg-grey w-11 h-10" onclick="abrirWhatsApp()">
+                    <i class="ri-whatsapp-fill text-green-700 text-2xl"></i></a>
+                </button>
+                <button class="bg-grey w-11 h-10" onclick="sendEmail()">
+                    <i class="ri-mail-fill text-emerald-100 text-2xl"></i></a>
+                </button>
+            </section>
+            <section class="bg-green-300 h-8 rounded shadow-md flex items-center justify-center">
+            <a href="Curriculum - novo.docx" download="Curriculum - novo.docx" class="font-display font-medium text-lg">Baixar PDF<i class="ri-file-download-fill pl-2"></i></a>
+            </section>
         </section>
 
-        <!-- Meios de contato -->
-        <section class="bg-amber-400 h-20 w-70 flex items-center justify-around">
-            <button class="bg-red-400 w-11 h-10" onclick="abrirGitHub()">
-                <i class="devicon-github-original colored text-2xl"></i>
-            </button>
-            <button class="bg-red-400 w-11 h-10" onclick="abrirLinkedin()">
-                <i class="devicon-linkedin-plain colored text-2xl"></i>
-            </button>
-            <button class="bg-red-400 w-11 h-10" onclick="abrirWhatsApp()">
-                <i class="ri-whatsapp-fill text-green-700 text-2xl"></i></a>
-            </button>
-            <button class="bg-red-400 w-11 h-10" onclick="sendEmail()">
-                <i class="ri-mail-fill text-emerald-100 text-2xl"></i></a>
-            </button>
-        </section>
-        <section class="bg-blue-500 h-10 w-40 flex items-center justify-center">
-            <a href="Curriculum - novo.docx" download="Curriculum - novo.docx" class="font-display font-medium text-lg">Baixar PDF<i class="ri-file-download-fill pl-2"></i></a>
-        </section>
+        
 
         <!-- área com as imagens e notas -->
-        <div class="">
-            <section class="bg-amber-200" id="foto-project">Imagem</section>
-            <section class="bg-amber-200" id="nota-project">Notas
+        <div class="col-span-3 grid grid-cols-2 gap-4">
+            <section class="bg-amber-200 h-48 rounded shadow-md bg-[url('/assets/fundo2.jpg')] bg-cover bg-center" id="foto-project"><i class="ri-image-circle-fill text-3xl text-green-950"></i></section>
+            <section class="bg-green-300 h-78 w-78 rounded shadow-md" id="nota-project">Notas
                 <hr>
             </section>
         </div>
 
-        <section class="bg-red-700" id="texto-fixo"></section>
-    </main>
+        <!-- Caixa no meio com informações pessoais -->
+         <div class="col-span-2 bg-green-900 h-32 rounded shadow-md"></div>
 
-    <!-- rodapé com navbar -->
-    <footer class="bg-amber-600 h-15 flex items-center justify-center rounded-2xl w-3xl shadow-xl" id="icon-project">
-        <nav>
-            <button onclick="showProject('projeto1')" class="p-2 rounded">
-            <img src="assets/IMC.png" alt="Calculadora IMC"></button>
-            <button onclick="showProject ('projeto2')" class="p-2 rounded">
-            <img src="assets/kanban.png" alt="Kanban"></button>
-        </nav>
-    </footer>
-    <p class="font-display2 text-lg font-medium text-center py-4">&copy;Criado por Neusa Neves - Ano 2025</p>
+         <!-- Caixa com um texto fixo -->
+        <section class="bg-greenn h-24 rounded shadow-md text-white text-justify" id="texto-fixo"></section>
+
+        <!-- rodapé com navbar -->
+        <footer class="bg-verde-pastel col-span-4 flex items-center justify-center h-16 rounded shadow-md backdrop-blur-sm" id="icon-project">
+            <nav>
+                <button onclick="showProject('projeto1')" class="p-2 rounded">
+                <img src="assets/IMC.png" alt="Calculadora IMC"></button>
+                <button onclick="showProject ('projeto2')" class="p-2 rounded">
+                <img src="assets/kanban.png" alt="Kanban"></button>
+            </nav>
+        </footer>
+
+    </main>
+    
 </body>
+
 <script src="js/script.js"></script>
 </html>
